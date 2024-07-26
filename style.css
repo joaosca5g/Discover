@@ -32,6 +32,7 @@ body{
 */
 /*Serve para encurtar o código.(Short-Hand)*/
 background: var(--bg-url) no-repeat top center/cover;  
+height: 100vh;
 }
 body *{
   font-family: 'Inter', sans-serif;
@@ -166,4 +167,18 @@ footer{
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+
+/*Media queries*/
+@media(min-width: 700px){
+  :root{
+    --bg-url:url(./assets/bg-desktop.jpg);
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+
 }
